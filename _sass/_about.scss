@@ -1,0 +1,30 @@
+section.about {
+  background-color: #dc2430;
+  .section-heading {
+    margin-bottom: 10px;
+    h2 {
+        margin-top: 0;
+    }
+    p {
+        margin-bottom: 0;
+    }
+  }
+
+  .device-container {
+    margin-bottom: 100px;
+    @media(min-width: 992px) {
+        margin-bottom: 0;
+    }
+  }
+
+  .about-title {
+    font-weight: bold;
+    color: white;
+  }
+
+  .about-caption {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="page-top" class="index">
+    {% include navigation.html %}
+    {% include header.html %}
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <p>{{ content }}</p>
+          <ul>
+            {% for post in site.posts %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

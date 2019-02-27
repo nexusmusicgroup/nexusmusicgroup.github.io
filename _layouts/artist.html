@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="page-top" class="index">
+    {% include navigation.html %}
+    {% include header.html %}
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <!-- Profile image-->
+          <div class="col">
+            <img src="/img/{{page.img}}" class="feature img-thumbnail img-fluid rounded-circle">
+            <hr>
+            <!-- Row 1 -->
+            <div class="row">
+              <!-- Column 1 -->
+              {% if page.spotify != "na"%}
+                <div class="col center">
+                  <a href="{{page.spotify}}" class="color-override"><i class="icon fab fa-spotify"></i></a>
+                </div>
+              {% endif %}
+              <!-- Column 2 -->
+              {% if page.apple != "na"%}
+                <div class="col center">
+                  <a href="{{page.apple}}" class="color-override"><i class="icon fab fa-apple"></i></a>
+                </div>
+              {% endif %}
+              <!-- Column 3 -->
+              {% if page.amazon != "na"%}
+                <div class="col center">
+                  <a href="{{page.amazon}}" class="color-override"><i class="icon fab fa-amazon"></i></a>
+                </div>
+              {% endif %}
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+              <!-- Column 1 -->
+              {% if page.facebook != "na"%}
+                <div class="col center">
+                  <a href="{{page.facebook}}" class="color-override"><i class="icon fab fa-facebook"></i></a>
+                </div>
+              {% endif %}
+              <!-- Column 2 -->
+              {% if page.instagram != "na"%}
+                <div class="col center">
+                  <a href="{{page.instagram}}" class="color-override"><i class="icon fab fa-instagram"></i></a>
+                </div>
+              {% endif %}
+              <!-- Column 3 -->
+              {% if page.website != "na"%}
+                <div class="col center">
+                  <a href="{{page.website}}" class="color-override"><i class="icon fa fa-globe-europe"></i></a>
+                </div>
+              {% endif %}
+            </div>
+            <hr>
+            <h5 class="mgmt">Management Contact: <a href="mailto:{{page.management}}">{{page.management}}</a> </h5>
+          </div>
+          <div class="col-sm">
+            <p class="feature">{{ content }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

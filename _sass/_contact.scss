@@ -1,0 +1,39 @@
+// Styling for the contact section
+section.contact {
+    background: {color: #131315;}
+    text-align: center;
+    h2 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        color: white;
+    }
+    ul.list-social {
+        margin-bottom: 0;
+        li {
+            a {
+                font-size: 40px;
+                line-height: 80px;
+                display: block;
+                width: 80px;
+                height: 80px;
+                color: white;
+                border-radius: 100%;
+            }
+            &.social-instagram {
+                a {
+                    background: #f09433; 
+                    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+                    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+                }
+            }
+            &.social-mail {
+                a {
+                    background: rgb(37,116,237);
+                    background: linear-gradient(0deg, rgba(37,116,237,1) 0%, rgba(40,161,244,1) 50%, rgba(45,200,249,1) 100%);
+                }
+            }
+        }
+    }
+}

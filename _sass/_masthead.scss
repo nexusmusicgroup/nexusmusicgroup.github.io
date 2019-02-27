@@ -1,0 +1,35 @@
+// Styling for the masthead
+header.masthead {
+    position: relative;
+
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 10px;
+
+    color: white;
+    background: {color: #131315;}
+
+    .header-content {
+        max-width: 5000px;
+        margin-bottom: 100px;
+
+        text-align: center;
+        h1 {
+            font-size: 70px;
+            font-weight: bold;
+        }
+    }
+    .device-container {
+        max-width: 325px;
+        margin-right: auto;
+        margin-left: auto;
+        .screen img {
+            border-radius: 3px;
+        }
+    }
+}
+
+.emphasis {
+    font-size: 60px !important;
+    font-weight: bold;
+}

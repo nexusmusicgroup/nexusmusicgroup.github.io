@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="page-top" class="index">
+    {% include navigation.html %}
+    {% include blog_header.html %}
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <p>{{ content }}</p>
+          <p>{{ page.author }}</p>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="page-top" class="index">
+    {% include navigation.html %}
+    <header class="masthead">
+      <div class="row h-100">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="text-center emphasis">{{ page.error }}</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <a href="/"><button type="button" class="btn btn-success btn-lg btn-block">Take me back!</button></a>
+        </div>
+      </div>
+    </section>
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>
