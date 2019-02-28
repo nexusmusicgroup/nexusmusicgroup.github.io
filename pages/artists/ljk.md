@@ -1,6 +1,6 @@
 ---
 layout: artist
-title: "LJK"
+title: "Leoni Jane Kennedy"
 permalink: artists/ljk
 img: ljk.jpg
 spotify: https://open.spotify.com/artist/1VkmfO3JI3YKw4a14qNL1r?si=cCF4HCdsTPuhbvGX3kpIJg
